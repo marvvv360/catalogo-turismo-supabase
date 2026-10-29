@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Catálogo de Turismo - Next.js y Supabase
 
-## Getting Started
+Aplicación web moderna y responsiva desarrollada como un catálogo de destinos turísticos, construida con Next.js (App Router), Tailwind CSS, TypeScript y Supabase como base de datos backend.
 
-First, run the development server:
+## Descripción del Proyecto
+Este proyecto permite a los usuarios explorar un listado dinámico de destinos turísticos con imágenes optimizadas y consultar la información detallada de cada ubicación a través de rutas dinámicas. Cuenta con conexión en tiempo real a una base de datos PostgreSQL alojada en Supabase y está optimizado para su despliegue en Vercel.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos Previos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js >= 18.x
+- npm
+- Cuenta de Supabase configurada
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Instalación y Configuración
 
-To learn more about Next.js, take a look at the following resources:
+1. Clonar el repositorio:
+   git clone <https://github.com/marvvv360/catalogo-turismo-supabase.git>
+   cd catalogo-turismo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Instalar dependencias:
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Configurar variables de entorno:
+   Crea un archivo llamado `.env.local` en la raíz del proyecto basándote en la siguiente estructura de variables necesarias:
 
-## Deploy on Vercel
+   NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase_aqui
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_clave_publica_anon_aqui
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Iniciar el servidor local:
+   npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   La aplicación estará corriendo en http://localhost:3000.

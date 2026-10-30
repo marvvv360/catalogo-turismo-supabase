@@ -47,15 +47,16 @@ Para emular los servicios de AWS requeridos sin ningún costo ni registro de tar
 
 1. Asegúrate de contar con el archivo docker-compose.yml en la raíz del proyecto con la configuración de LocalStack:
 
-services:
-  localstack:
-    image: localstack/localstack:3.4.0
-    ports:
-      - "4566:4566"
-    environment:
-      - AWS_DEFAULT_REGION=us-east-1
-    volumes:
-      - "./localstack-data:/var/lib/localstack"
+```services:
+localstack:
+image: localstack/localstack:3.4.0
+ports:
+- "4566:4566"
+environment:
+- AWS_DEFAULT_REGION=us-east-1
+volumes:
+- "./localstack-data:/var/lib/localstack"
+```
 
 2. Iniciar el contenedor de LocalStack:
    docker compose up -d
